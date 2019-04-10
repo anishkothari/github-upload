@@ -1,0 +1,33 @@
+/* This CSS variable is setting the margin on the left and right sides of the page. */
+:root {
+  --page-spacing: 10%;
+}
+
+.MainContent {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 var(--page-spacing);
+}
+
+/* The base CSS class for the bar chart; setting up Flexbox to display the bars horizontally. */
+.BarChart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* This is CSS for the individual bars in the chart; using margin and padding to leave space between the bars and a transition to make it more visually appealing. */
+.BarChart-bar {
+  margin: 20px 0px;
+  padding: 5px;
+  transition: padding 0.5s,
+              background-color 1.5s;
+}
+
+/* Setting different background colors for the bars and alternating them to make them easier to distinguish. */
+.BarChart--light {
+  background-color: #D5E4FB;
+}
+
+.BarChart--dark {
+  background-color: #6D87B0;
+}
