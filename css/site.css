@@ -24,10 +24,10 @@
 }
 
 /* Setting different background colors for the bars and alternating them to make them easier to distinguish. */
-.BarChart--light {
+.BarChart-bar:nth-of-type(odd) {
   background-color: #D5E4FB;
 }
 
-.BarChart--dark {
-  background-color: #6D87B0;
+.BarChart-bar:nth-of-type(even) {
+  background-color: #A5BAD9;
 }
