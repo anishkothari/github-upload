@@ -13,12 +13,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
 }
 
 /* This is CSS for the individual bars in the chart; using margin and padding to leave space between the bars and a transition to make it more visually appealing. */
 .BarChart-bar {
-  margin: 20px 0px;
-  padding: 5px;
+  margin: 15px 0;
+  padding: 2px 0;
+  text-align: center;
   transition: padding 0.5s,
               background-color 1.5s;
 }
@@ -30,4 +33,12 @@
 
 .BarChart-bar:nth-of-type(even) {
   background-color: #A5BAD9;
+}
+
+.BarChart-bar:first-of-type {
+  margin: 0 0 15px 0;
+}
+
+.BarChart-bar:last-of-type {
+  margin: 15px 0 0 0;
 }

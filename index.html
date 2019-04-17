@@ -8,31 +8,31 @@
         <meta charset="utf8" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/site.css" />
-        <title>Health Care Spending Across Different Countries</title>
+        <title>Per Capita Health Care Spending in Different Countries</title>
     </head>
     <body>
         <div class="Container">
           <section class="MainContent">
-            <h1 class="PageHeading">Health Care Spending in Different Countries</h1>
+            <h1 class="PageHeading">Per Capita Health Care Spending in Different Countries</h1>
             <p>This chart displays the per capita health care spending in selected countries from 2016 relative to the USA. Data from the <a href="https://en.wikipedia.org/wiki/List_of_countries_by_total_health_expenditure_per_capita">Organisation for Economic Co-operation and Development</a>.</p>
             <!-- Displaying the first bar chart by setting the width. I divided the dollar amount by 10 to determine the width of the bar in pixels. I'm also using the onClick event to display an alert with the numerical data and alternating the colors of the bars by setting different CSS classes.-->
             <div class="BarChart">
-              <div onClick="alert('Health care in Australia costs $4,708 per capita.')" class="BarChart-bar BarChart--light" style="width: 47.6%">Australia </div>
-              <div onClick="alert('Health care in Chile costs $1,977 per capita.')" class="BarChart-bar BarChart--dark" style="width: 20%">Chile </div>
-              <div onClick="alert('Health care in Japan costs $4,519 per capita.')" class="BarChart-bar BarChart--light" style="width: 45.7%">Japan </div>
-              <div onClick="alert('Health care in Norway costs $6,647 per capita.')" class="BarChart-bar BarChart--dark" style="width: 67.2%">Norway </div>
-              <div onClick="alert('Health care in the USA costs $9,892 per capita.')" class="BarChart-bar BarChart--light" style="width: 100%">USA </div>
-              <div onClick="alert('On average health care in OECD countries costs $4,002 per capita.')" class="BarChart-bar BarChart--dark" style="width: 40.5%">OECD Average </div>
+              <div onClick="alert('Health care in Australia costs $4,708 per capita.')" class="BarChart-bar" style="width: 47.6%">Australia: $4,708</div>
+              <div onClick="alert('Health care in Chile costs $1,977 per capita.')" class="BarChart-bar" style="width: 20%">Chile: $1,977</div>
+              <div onClick="alert('Health care in Japan costs $4,519 per capita.')" class="BarChart-bar" style="width: 45.7%">Japan: $4,519</div>
+              <div onClick="alert('Health care in Norway costs $6,647 per capita.')" class="BarChart-bar" style="width: 67.2%">Norway: $6,647</div>
+              <div onClick="alert('Health care in the USA costs $9,892 per capita.')" class="BarChart-bar" style="width: 100%">USA: $9,892</div>
+              <div onClick="alert('On average health care in OECD countries costs $4,002 per capita.')" class="BarChart-bar" style="width: 40.5%">OECD Average: $4,002</div>
             </div>
-            <!-- Use expenditure as a percentage of GDP.
+            <!-- Use expenditure as a percentage of GDP. -->
             <h1 class="PageHeading">Health Care Spending in the USA from 1980 to 2017</h1>
-            <p>This chart displays the per capita health care spending in the USA from 1980 to 2017 (the latest year data is available). Data from <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/NationalHealthAccountsHistorical.html">the National Health Expenditure Accounts</a>.</p>
+            <p>This chart displays the national health care expenditure in the USA from 1980 to 2017 as a percentage of Gross Domestic Product. Data from <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/NationalHealthAccountsHistorical.html">the National Health Expenditure Accounts</a>.</p>
             <div class="BarChart">
-              <div onClick="alert('Health care in the USA cost $110 per capita in 1980')" class="BarChart-bar BarChart--light" style="width: 110.8px">1980 </div>
-              <div onClick="alert('Health care in the USA cost $2,843 per capita in 1990')" class="BarChart-bar BarChart--dark" style="width: 284.3px">1990 </div>
-              <div onClick="alert('Health care in the USA cost $4,855 per capita in 2000')" class="BarChart-bar BarChart--light" style="width: 485.5px">2000 </div>
-              <div onClick="alert('Health care in the USA cost $8,411 per capita in 2010')" class="BarChart-bar BarChart--dark" style="width: 841.1px">2010 </div>
-              <div onClick="alert('Health care in the USA costs $10,739 per capita in 2017')" class="BarChart-bar BarChart--light" style="width: 1073.9px">2017 </div> -->
+              <div onClick="alert('Health care in the USA was 8.9% of GDP in 1980')" class="BarChart-bar" style="width: 8.9%">8.9% in 1980</div>
+              <div onClick="alert('Health care in the USA was 12.1% of GDP in 1990')" class="BarChart-bar" style="width: 12.1%">12.1% in 1990</div>
+              <div onClick="alert('Health care in the USA was 13.4% of GDP in 2000')" class="BarChart-bar" style="width: 13.4%">13.4% in 2000</div>
+              <div onClick="alert('Health care in the USA was 17.3% of GDP in 2010')" class="BarChart-bar" style="width: 17.3%">17.3% in 2010</div>
+              <div onClick="alert('Health care in the USA was 17.9% of GDP in 2017')" class="BarChart-bar" style="width: 17.9%">17.9% in 2017</div>
             </div>
           </section>
         </div>
